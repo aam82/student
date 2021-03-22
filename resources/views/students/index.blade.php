@@ -1,10 +1,11 @@
 @extends('students.layout')
  
 @section('content')
+<br>
     <div class="row">
         <div class="col-lg-12 margin-tb">
             <div class="pull-left">
-                <h2>CRUD</h2>
+                <h2>Students CRUD</h2>
             </div>
             <div class="pull-right">
                 <a class="btn btn-success" href="{{ route('students.create') }}"> Create New Student</a>
@@ -17,10 +18,35 @@
             <p>{{ $message }}</p>
         </div>
     @endif
+<br>
+   <div>
+        <div class="mx-auto pull-right">
+            <div class="">
+                <form action="{{ route('students.index') }}" method="GET" role="search">
 
+                    <div class="input-group">
+                        <input type="text" class="form-control mr-2" name="term" placeholder="Search by Name " id="term">
+                        <span class="input-group-btn mr-4 mt-1">
+                            <button class="btn btn-info" type="submit" title="Search projects">Refresh Search
+                                <span class="btn btn-search"></span>
+                            </button>
+                        </span>
+                        <a href="{{ route('students.index') }}" class=" mt-1">
+                            <span class="input-group-btn">
+
+                            </span>
+
+                        </a>
+                    </div>
+                    <br>
+                </form>
+            </div>
+        </div>
+    </div>
+<br>
     <table class="table table-bordered">
         <tr>
-            <th>No</th>
+            <th>Id</th>
             <th>Name</th>
             <th>Details</th>
             <th width="280px">Action</th>

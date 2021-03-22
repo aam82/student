@@ -7,13 +7,30 @@ use Illuminate\Http\Request;
 
 class StudentController extends Controller
 {
-    public function index()
+    public function index(Request $request)
     {
-        $students = Student::latest()->paginate(5);
-  
+        $students = Student::where([
+            ['name', '!=', Null],
+            [function ($query) use ($request) {
+                if (($term = $request->term)) {
+                    $query->orWhere('name', 'LIKE', '%' .$term. '%')->get();
+                }
+            }]
+        ])
+            ->orderBy('id', 'desc')
+            ->paginate(10);
+
         return view('students.index',compact('students'))
             ->with('i', (request()->input('page', 1) - 1) * 5);
-    }
+    }    
+
+    // public function index()
+  
+    // {
+    //     $students = Student::latest()->paginate(5);
+    //     return view('students.index',compact('students'))
+    //         ->with('i', (request()->input('page', 1) - 1) * 5);
+    // }
 
     public function create()
     {

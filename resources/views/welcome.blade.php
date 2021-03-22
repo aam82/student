@@ -8,7 +8,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha/css/bootstrap.css" rel="stylesheet">
     <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico">
 
-    <title>Jumbotron Template for Bootstrap</title>
+    <title>Student CRUD app</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/jumbotron/">
 
@@ -60,7 +60,7 @@
       <div class="jumbotron">
         <div class="container">
           <h1 class="display-3">About</h1>
-          <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
+          <p>PHP Programming (420P75AB - Winter 2021)</p>
           <p><a class="btn btn-primary btn-lg" href="{{ route('students.index') }}" role="button">Start App &raquo;</a></p>
         </div>
       </div>
@@ -68,20 +68,22 @@
       <div class="container">
         <!-- Example row of columns -->
         <div class="row">
+          
+
           <div class="col-md-4">
-            <h2>Heading</h2>
-            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-            <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+            <h2>Map</h2>
+            <p>21 275 Lakeshore Road Sainte-Anne-de-Bellevue, Québec H9X 3L9 Canada. </p>
+            <p><a class="btn btn-secondary" href="https://www.google.com/maps/place/John+Abbott+College/@45.4064663,-73.9435058,17z/data=!3m1!4b1!4m5!3m4!1s0x4cc938500caad3a7:0xd807d74a59dcffcf!8m2!3d45.4064663!4d-73.9413171" role="button">View details &raquo;</a></p>
           </div>
           <div class="col-md-4">
-            <h2>Heading</h2>
-            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-            <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+            <h2>School</h2>
+            <p> Access your full potential at John Abbott College's Centre for Continuing Education. </p>
+            <p><a class="btn btn-secondary" href="https://www.johnabbott.qc.ca/" role="button">View details &raquo;</a></p>
           </div>
           <div class="col-md-4">
-            <h2>Heading</h2>
-            <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-            <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+            <h2>Social Media</h2>
+            <p>Don't miss our future events, follow us on our social media platforms.</p>
+            <p><a class="btn btn-secondary" href="https://www.facebook.com/" role="button">View details &raquo;</a></p>
           </div>
         </div>
 
